@@ -11,5 +11,6 @@ print(data["draws"][0]["drawComment"])
 print("")
 for i, game in enumerate(games):
     desc = game["eventDescription"]
-    start = ":".join(game["match"]["matchStart"].split("T")[1].split(":")[:2])
-    print(f"{i + 1}. {desc}".ljust(25) + f":: {start}")
+    print(desc)
+    # start = ":".join(game["match"]["matchStart"].split("T")[1].split(":")[:2])
+    # print(f"{i + 1}. {desc}".ljust(25) + f":: {start}")
