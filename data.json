@@ -1,0 +1,2266 @@
+{
+  "draws": [
+    {
+      "productName": "Stryktipset",
+      "seasonLastDraw": false,
+      "productId": 1,
+      "currentNetSale": "493749,00",
+      "regCloseDescription": "Stryktipset v 12, stänger 2022-03-26 15:59",
+      "extraInfo": null,
+      "drawNumber": 4734,
+      "betIndex": 0,
+      "drawState": "Open",
+      "drawStateId": 2,
+      "regBetDisabled": "NotDisabled",
+      "regOpenTime": "2022-03-23T07:00:00+01:00",
+      "regCloseTime": "2022-03-26T15:59:00+01:00",
+      "cancelCloseTime": "2022-03-26T16:00:00+01:00",
+      "sport": {
+        "id": 1000002,
+        "type": 1,
+        "name": "Fotboll",
+        "numCountries": 0
+      },
+      "drawComment": "Stryktipset v. 2022-12",
+      "bombenDrawNum": 744,
+      "rowPrice": "1,00",
+      "fund": null,
+      "drawEvents": [
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "England - Schweiz",
+          "extraInfo": null,
+          "eventNumber": 1,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 16332633,
+            "matchStart": "2022-03-26T18:30:00+01:00",
+            "status": "-1",
+            "statusId": -1,
+            "sportEventStatus": "Undefined",
+            "statusTime": "0001-01-01T01:12:00+01:12",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1001164,
+                "type": "home",
+                "name": "England",
+                "latest": [
+                  "V",
+                  "V",
+                  "O",
+                  "V",
+                  "O"
+                ],
+                "trend": 1,
+                "goalAvg": "4,40",
+                "shortName": "ENG",
+                "mediumName": "England",
+                "code": "ENG",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1000914,
+                "type": "away",
+                "name": "Schweiz",
+                "latest": [
+                  "V",
+                  "O",
+                  "V",
+                  "V",
+                  "O"
+                ],
+                "trend": 1,
+                "goalAvg": "2,20",
+                "shortName": "SCHW",
+                "mediumName": "Schweiz",
+                "code": "SCHW",
+                "countryId": 1000039,
+                "countryName": "Schweiz",
+                "isoCode": "CHE",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000628,
+              "uniqueLeagueId": 12690653,
+              "uniqueLeagueName": "Internationella vänskapsmatcher",
+              "name": "Fotbollslandskamp",
+              "shortName": "Landskamp",
+              "country": {
+                "id": 1000094,
+                "name": "Internationell",
+                "isoCode": "INT",
+                "population": 0
+              },
+              "code": "FBITR",
+              "printAbbreviation": "FLK",
+              "season": {
+                "id": 16219245,
+                "name": "Vänskapsmatcher 2022",
+                "startDate": "2022-01-01T01:00:00+01:00",
+                "endDate": "2022-12-31T01:00:00+01:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": null,
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 0,
+              "draws": 5,
+              "awayWins": 0
+            }
+          },
+          "odds": {
+            "one": "1,75",
+            "x": "3,23",
+            "two": "4,55"
+          },
+          "favouriteOdds": {
+            "one": "51.91",
+            "x": "28.12",
+            "two": "19.97"
+          },
+          "startOdds": {
+            "one": "1,75",
+            "x": "3,23",
+            "two": "4,55"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "1,75",
+                "favouriteOdds": "51,91",
+                "startOdds": "1,75"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,23",
+                "favouriteOdds": "28,12",
+                "startOdds": "3,23"
+              },
+              {
+                "outcome": "2",
+                "odds": "4,55",
+                "favouriteOdds": "19,97",
+                "startOdds": "4,55"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "53",
+            "x": "21",
+            "two": "26",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "52",
+            "refX": "21",
+            "refTwo": "27",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "31810701"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Nederländ - Danmark",
+          "extraInfo": null,
+          "eventNumber": 2,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 16332636,
+            "matchStart": "2022-03-26T20:45:00+01:00",
+            "status": "-1",
+            "statusId": -1,
+            "sportEventStatus": "Undefined",
+            "statusTime": "0001-01-01T01:12:00+01:12",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1001168,
+                "type": "home",
+                "name": "Nederländerna",
+                "latest": [
+                  "V",
+                  "O",
+                  "V",
+                  "V",
+                  "V"
+                ],
+                "trend": 2,
+                "goalAvg": "3,40",
+                "shortName": "NED",
+                "mediumName": "Nederländ",
+                "code": "NED",
+                "countryId": 1000012,
+                "countryName": "Nederländerna",
+                "isoCode": "NLD",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1001158,
+                "type": "away",
+                "name": "Danmark",
+                "latest": [
+                  "F",
+                  "V",
+                  "V",
+                  "V",
+                  "V"
+                ],
+                "trend": 2,
+                "goalAvg": "2,60",
+                "shortName": "DAN",
+                "mediumName": "Danmark",
+                "code": "DAN",
+                "countryId": 1000019,
+                "countryName": "Danmark",
+                "isoCode": "DNK",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000628,
+              "uniqueLeagueId": 12690653,
+              "uniqueLeagueName": "Internationella vänskapsmatcher",
+              "name": "Fotbollslandskamp",
+              "shortName": "Landskamp",
+              "country": {
+                "id": 1000094,
+                "name": "Internationell",
+                "isoCode": "INT",
+                "population": 0
+              },
+              "code": "FBITR",
+              "printAbbreviation": "FLK",
+              "season": {
+                "id": 16219245,
+                "name": "Vänskapsmatcher 2022",
+                "startDate": "2022-01-01T01:00:00+01:00",
+                "endDate": "2022-12-31T01:00:00+01:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": null,
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 2,
+              "draws": 2,
+              "awayWins": 1
+            }
+          },
+          "odds": {
+            "one": "1,82",
+            "x": "3,33",
+            "two": "3,93"
+          },
+          "favouriteOdds": {
+            "one": "49.76",
+            "x": "27.20",
+            "two": "23.04"
+          },
+          "startOdds": {
+            "one": "1,79",
+            "x": "3,37",
+            "two": "4,05"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "1,82",
+                "favouriteOdds": "49,76",
+                "startOdds": "1,79"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,33",
+                "favouriteOdds": "27,20",
+                "startOdds": "3,37"
+              },
+              {
+                "outcome": "2",
+                "odds": "3,93",
+                "favouriteOdds": "23,04",
+                "startOdds": "4,05"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "47",
+            "x": "26",
+            "two": "27",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "47",
+            "refX": "26",
+            "refTwo": "27",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "31810907"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Finland - Island",
+          "extraInfo": null,
+          "eventNumber": 3,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 16332637,
+            "matchStart": "2022-03-26T17:00:00+01:00",
+            "status": "-1",
+            "statusId": -1,
+            "sportEventStatus": "Undefined",
+            "statusTime": "0001-01-01T01:12:00+01:12",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1000422,
+                "type": "home",
+                "name": "Finland",
+                "latest": [
+                  "F",
+                  "V",
+                  "V",
+                  "F",
+                  "F"
+                ],
+                "trend": 0,
+                "goalAvg": "1,20",
+                "shortName": "FIN",
+                "mediumName": "Finland",
+                "code": "FIN",
+                "countryId": 1000021,
+                "countryName": "Finland",
+                "isoCode": "FIN",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1000842,
+                "type": "away",
+                "name": "Island",
+                "latest": [
+                  "F",
+                  "O",
+                  "F",
+                  "O",
+                  "V"
+                ],
+                "trend": -1,
+                "goalAvg": "1,40",
+                "shortName": "ISL",
+                "mediumName": "Island",
+                "code": "ISL",
+                "countryId": 1000062,
+                "countryName": "Island",
+                "isoCode": "ISL",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000628,
+              "uniqueLeagueId": 12690653,
+              "uniqueLeagueName": "Internationella vänskapsmatcher",
+              "name": "Fotbollslandskamp",
+              "shortName": "Landskamp",
+              "country": {
+                "id": 1000094,
+                "name": "Internationell",
+                "isoCode": "INT",
+                "population": 0
+              },
+              "code": "FBITR",
+              "printAbbreviation": "FLK",
+              "season": {
+                "id": 16219245,
+                "name": "Vänskapsmatcher 2022",
+                "startDate": "2022-01-01T01:00:00+01:00",
+                "endDate": "2022-12-31T01:00:00+01:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": null,
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 1,
+              "draws": 0,
+              "awayWins": 2
+            }
+          },
+          "odds": {
+            "one": "2,21",
+            "x": "2,94",
+            "two": "3,19"
+          },
+          "favouriteOdds": {
+            "one": "40.91",
+            "x": "30.75",
+            "two": "28.34"
+          },
+          "startOdds": {
+            "one": "2,21",
+            "x": "2,94",
+            "two": "3,19"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "2,21",
+                "favouriteOdds": "40,91",
+                "startOdds": "2,21"
+              },
+              {
+                "outcome": "X",
+                "odds": "2,94",
+                "favouriteOdds": "30,75",
+                "startOdds": "2,94"
+              },
+              {
+                "outcome": "2",
+                "odds": "3,19",
+                "favouriteOdds": "28,34",
+                "startOdds": "3,19"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "44",
+            "x": "25",
+            "two": "31",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "44",
+            "refX": "24",
+            "refTwo": "32",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "31810855"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Irland - Belgien",
+          "extraInfo": null,
+          "eventNumber": 4,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 16474346,
+            "matchStart": "2022-03-26T18:00:00+01:00",
+            "status": "-1",
+            "statusId": -1,
+            "sportEventStatus": "Undefined",
+            "statusTime": "0001-01-01T01:12:00+01:12",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1001486,
+                "type": "home",
+                "name": "Irland",
+                "latest": [
+                  "V",
+                  "O",
+                  "V",
+                  "V",
+                  "O"
+                ],
+                "trend": 1,
+                "goalAvg": "2,20",
+                "shortName": "IRL",
+                "mediumName": "Irland",
+                "code": "IRL",
+                "countryId": 1000058,
+                "countryName": "Irland",
+                "isoCode": "IRL",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1001165,
+                "type": "away",
+                "name": "Belgien",
+                "latest": [
+                  "O",
+                  "V",
+                  "F",
+                  "F",
+                  "V"
+                ],
+                "trend": 0,
+                "goalAvg": "1,60",
+                "shortName": "BEL",
+                "mediumName": "Belgien",
+                "code": "BEL",
+                "countryId": 1000031,
+                "countryName": "Belgien",
+                "isoCode": "BEL",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000628,
+              "uniqueLeagueId": 12690653,
+              "uniqueLeagueName": "Internationella vänskapsmatcher",
+              "name": "Fotbollslandskamp",
+              "shortName": "Landskamp",
+              "country": {
+                "id": 1000094,
+                "name": "Internationell",
+                "isoCode": "INT",
+                "population": 0
+              },
+              "code": "FBITR",
+              "printAbbreviation": "FLK",
+              "season": {
+                "id": 16219245,
+                "name": "Vänskapsmatcher 2022",
+                "startDate": "2022-01-01T01:00:00+01:00",
+                "endDate": "2022-12-31T01:00:00+01:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": null,
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 0,
+              "draws": 0,
+              "awayWins": 1
+            }
+          },
+          "odds": {
+            "one": "6,40",
+            "x": "3,59",
+            "two": "1,51"
+          },
+          "favouriteOdds": {
+            "one": "14.24",
+            "x": "25.39",
+            "two": "60.37"
+          },
+          "startOdds": {
+            "one": "6,40",
+            "x": "3,59",
+            "two": "1,51"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "6,40",
+                "favouriteOdds": "14,24",
+                "startOdds": "6,40"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,59",
+                "favouriteOdds": "25,39",
+                "startOdds": "3,59"
+              },
+              {
+                "outcome": "2",
+                "odds": "1,51",
+                "favouriteOdds": "60,37",
+                "startOdds": "1,51"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "43",
+            "x": "26",
+            "two": "31",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "44",
+            "refX": "26",
+            "refTwo": "30",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "32253983"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Spanien - Albanien",
+          "extraInfo": null,
+          "eventNumber": 5,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 16332635,
+            "matchStart": "2022-03-26T19:45:00+01:00",
+            "status": "-1",
+            "statusId": -1,
+            "sportEventStatus": "Undefined",
+            "statusTime": "0001-01-01T01:12:00+01:12",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1001166,
+                "type": "home",
+                "name": "Spanien",
+                "latest": [
+                  "V",
+                  "V",
+                  "F",
+                  "V",
+                  "V"
+                ],
+                "trend": 2,
+                "goalAvg": "1,40",
+                "shortName": "SPA",
+                "mediumName": "Spanien",
+                "code": "SPA",
+                "countryId": 1000011,
+                "countryName": "Spanien",
+                "isoCode": "ESP",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1000400,
+                "type": "away",
+                "name": "Albanien",
+                "latest": [
+                  "V",
+                  "F",
+                  "F",
+                  "V",
+                  "V"
+                ],
+                "trend": 1,
+                "goalAvg": "1,40",
+                "shortName": "ALB",
+                "mediumName": "Albanien",
+                "code": "ALB",
+                "countryId": 1000074,
+                "countryName": "Albanien",
+                "isoCode": "ALB",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000628,
+              "uniqueLeagueId": 12690653,
+              "uniqueLeagueName": "Internationella vänskapsmatcher",
+              "name": "Fotbollslandskamp",
+              "shortName": "Landskamp",
+              "country": {
+                "id": 1000094,
+                "name": "Internationell",
+                "isoCode": "INT",
+                "population": 0
+              },
+              "code": "FBITR",
+              "printAbbreviation": "FLK",
+              "season": {
+                "id": 16219245,
+                "name": "Vänskapsmatcher 2022",
+                "startDate": "2022-01-01T01:00:00+01:00",
+                "endDate": "2022-12-31T01:00:00+01:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": null,
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 0,
+              "draws": 2,
+              "awayWins": 0
+            }
+          },
+          "odds": {
+            "one": "1,14",
+            "x": "7,15",
+            "two": "18,75"
+          },
+          "favouriteOdds": {
+            "one": "81.95",
+            "x": "13.07",
+            "two": "4.98"
+          },
+          "startOdds": {
+            "one": "1,15",
+            "x": "6,80",
+            "two": "18,50"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "1,14",
+                "favouriteOdds": "81,95",
+                "startOdds": "1,15"
+              },
+              {
+                "outcome": "X",
+                "odds": "7,15",
+                "favouriteOdds": "13,07",
+                "startOdds": "6,80"
+              },
+              {
+                "outcome": "2",
+                "odds": "18,75",
+                "favouriteOdds": "4,98",
+                "startOdds": "18,50"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "45",
+            "x": "27",
+            "two": "28",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "43",
+            "refX": "28",
+            "refTwo": "29",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "31810757"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Tyskland - Israel",
+          "extraInfo": null,
+          "eventNumber": 6,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 16332634,
+            "matchStart": "2022-03-26T20:45:00+01:00",
+            "status": "-1",
+            "statusId": -1,
+            "sportEventStatus": "Undefined",
+            "statusTime": "0001-01-01T01:12:00+01:12",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1000332,
+                "type": "home",
+                "name": "Tyskland",
+                "latest": [
+                  "V",
+                  "V",
+                  "V",
+                  "V",
+                  "V"
+                ],
+                "trend": 2,
+                "goalAvg": "4,60",
+                "shortName": "TYS",
+                "mediumName": "Tyskland",
+                "code": "TYS",
+                "countryId": 1000009,
+                "countryName": "Tyskland",
+                "isoCode": "DEU",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1000843,
+                "type": "away",
+                "name": "Israel",
+                "latest": [
+                  "V",
+                  "F",
+                  "V",
+                  "F",
+                  "F"
+                ],
+                "trend": 0,
+                "goalAvg": "1,80",
+                "shortName": "ISR",
+                "mediumName": "Israel",
+                "code": "ISR",
+                "countryId": 1000061,
+                "countryName": "Israel",
+                "isoCode": "ISR",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000628,
+              "uniqueLeagueId": 12690653,
+              "uniqueLeagueName": "Internationella vänskapsmatcher",
+              "name": "Fotbollslandskamp",
+              "shortName": "Landskamp",
+              "country": {
+                "id": 1000094,
+                "name": "Internationell",
+                "isoCode": "INT",
+                "population": 0
+              },
+              "code": "FBITR",
+              "printAbbreviation": "FLK",
+              "season": {
+                "id": 16219245,
+                "name": "Vänskapsmatcher 2022",
+                "startDate": "2022-01-01T01:00:00+01:00",
+                "endDate": "2022-12-31T01:00:00+01:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": null,
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 0,
+              "draws": 2,
+              "awayWins": 0
+            }
+          },
+          "odds": {
+            "one": "1,11",
+            "x": "8,40",
+            "two": "23,00"
+          },
+          "favouriteOdds": {
+            "one": "84.72",
+            "x": "11.19",
+            "two": "4.09"
+          },
+          "startOdds": {
+            "one": "1,11",
+            "x": "8,05",
+            "two": "23,50"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "1,11",
+                "favouriteOdds": "84,72",
+                "startOdds": "1,11"
+              },
+              {
+                "outcome": "X",
+                "odds": "8,40",
+                "favouriteOdds": "11,19",
+                "startOdds": "8,05"
+              },
+              {
+                "outcome": "2",
+                "odds": "23,00",
+                "favouriteOdds": "4,09",
+                "startOdds": "23,50"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "46",
+            "x": "24",
+            "two": "30",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "44",
+            "refX": "25",
+            "refTwo": "31",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "31810771"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Ipswich - Plymouth",
+          "extraInfo": null,
+          "eventNumber": 7,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 15352932,
+            "matchStart": "2022-03-26T16:00:00+01:00",
+            "status": "Inte startat",
+            "statusId": 0,
+            "sportEventStatus": "NotStarted",
+            "statusTime": "2022-03-26T16:00:00+01:00",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1000327,
+                "type": "home",
+                "name": "Ipswich",
+                "latest": [
+                  "O",
+                  "O",
+                  "V",
+                  "V",
+                  "O"
+                ],
+                "trend": 1,
+                "goalAvg": "1,20",
+                "shortName": "IPSWI",
+                "mediumName": "Ipswich",
+                "code": "IPSWI",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1000439,
+                "type": "away",
+                "name": "Plymouth",
+                "latest": [
+                  "V",
+                  "V",
+                  "V",
+                  "V",
+                  "V"
+                ],
+                "trend": 2,
+                "goalAvg": "2,00",
+                "shortName": "PLYMO",
+                "mediumName": "Plymouth",
+                "code": "PLYMO",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000382,
+              "uniqueLeagueId": 12692627,
+              "uniqueLeagueName": "League One",
+              "name": "League One",
+              "shortName": "League 1",
+              "country": {
+                "id": 1000007,
+                "name": "England",
+                "isoCode": "ENG",
+                "population": 0
+              },
+              "code": "FBENG3",
+              "printAbbreviation": "EL1",
+              "season": {
+                "id": 15208164,
+                "name": "League One 21/22",
+                "startDate": "2021-08-07T02:00:00+02:00",
+                "endDate": "2022-05-22T01:59:00+02:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": {
+              "homeTeam": {
+                "position": "9",
+                "points": "61",
+                "played": "39",
+                "wins": "16",
+                "draws": "13",
+                "losses": "10",
+                "goalDiff": "18"
+              },
+              "awayTeam": {
+                "position": "4",
+                "points": "74",
+                "played": "39",
+                "wins": "22",
+                "draws": "8",
+                "losses": "9",
+                "goalDiff": "27"
+              }
+            },
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 2,
+              "draws": 1,
+              "awayWins": 2
+            }
+          },
+          "odds": {
+            "one": "1,83",
+            "x": "3,74",
+            "two": "4,20"
+          },
+          "favouriteOdds": {
+            "one": "51.95",
+            "x": "25.42",
+            "two": "22.63"
+          },
+          "startOdds": {
+            "one": "1,83",
+            "x": "3,74",
+            "two": "4,20"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "1,83",
+                "favouriteOdds": "51,95",
+                "startOdds": "1,83"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,74",
+                "favouriteOdds": "25,42",
+                "startOdds": "3,74"
+              },
+              {
+                "outcome": "2",
+                "odds": "4,20",
+                "favouriteOdds": "22,63",
+                "startOdds": "4,20"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "44",
+            "x": "27",
+            "two": "29",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "44",
+            "refX": "27",
+            "refTwo": "29",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "27869092"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Accringt. - Gillingh.",
+          "extraInfo": null,
+          "eventNumber": 8,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 15352928,
+            "matchStart": "2022-03-26T16:00:00+01:00",
+            "status": "Inte startat",
+            "statusId": 0,
+            "sportEventStatus": "NotStarted",
+            "statusTime": "2022-03-26T16:00:00+01:00",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1002939,
+                "type": "home",
+                "name": "Accrington Stanley",
+                "latest": [
+                  "F",
+                  "O",
+                  "V",
+                  "F",
+                  "V"
+                ],
+                "trend": 0,
+                "goalAvg": "1,20",
+                "shortName": "ACCRI",
+                "mediumName": "Accringt.",
+                "code": "ACCRI",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1000490,
+                "type": "away",
+                "name": "Gillingham",
+                "latest": [
+                  "O",
+                  "F",
+                  "V",
+                  "F",
+                  "V"
+                ],
+                "trend": 0,
+                "goalAvg": "0,60",
+                "shortName": "GILLI",
+                "mediumName": "Gillingh.",
+                "code": "GILLI",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000382,
+              "uniqueLeagueId": 12692627,
+              "uniqueLeagueName": "League One",
+              "name": "League One",
+              "shortName": "League 1",
+              "country": {
+                "id": 1000007,
+                "name": "England",
+                "isoCode": "ENG",
+                "population": 0
+              },
+              "code": "FBENG3",
+              "printAbbreviation": "EL1",
+              "season": {
+                "id": 15208164,
+                "name": "League One 21/22",
+                "startDate": "2021-08-07T02:00:00+02:00",
+                "endDate": "2022-05-22T01:59:00+02:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": {
+              "homeTeam": {
+                "position": "13",
+                "points": "50",
+                "played": "38",
+                "wins": "14",
+                "draws": "8",
+                "losses": "16",
+                "goalDiff": "-16"
+              },
+              "awayTeam": {
+                "position": "20",
+                "points": "34",
+                "played": "39",
+                "wins": "7",
+                "draws": "13",
+                "losses": "19",
+                "goalDiff": "-30"
+              }
+            },
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 1,
+              "draws": 2,
+              "awayWins": 2
+            }
+          },
+          "odds": {
+            "one": "1,75",
+            "x": "3,78",
+            "two": "4,65"
+          },
+          "favouriteOdds": {
+            "one": "54.37",
+            "x": "25.17",
+            "two": "20.46"
+          },
+          "startOdds": {
+            "one": "1,75",
+            "x": "3,78",
+            "two": "4,65"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "1,75",
+                "favouriteOdds": "54,37",
+                "startOdds": "1,75"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,78",
+                "favouriteOdds": "25,17",
+                "startOdds": "3,78"
+              },
+              {
+                "outcome": "2",
+                "odds": "4,65",
+                "favouriteOdds": "20,46",
+                "startOdds": "4,65"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "45",
+            "x": "27",
+            "two": "28",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "44",
+            "refX": "27",
+            "refTwo": "29",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "27869084"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "AFC Wimb. - Cambridge",
+          "extraInfo": null,
+          "eventNumber": 9,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 15352927,
+            "matchStart": "2022-03-26T16:00:00+01:00",
+            "status": "Inte startat",
+            "statusId": 0,
+            "sportEventStatus": "NotStarted",
+            "statusTime": "2022-03-26T16:00:00+01:00",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1005909,
+                "type": "home",
+                "name": "AFC Wimbledon",
+                "latest": [
+                  "F",
+                  "F",
+                  "F",
+                  "F",
+                  "O"
+                ],
+                "trend": -2,
+                "goalAvg": "0,60",
+                "shortName": "AFCWI",
+                "mediumName": "AFC Wimb.",
+                "code": "AFCWI",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1000426,
+                "type": "away",
+                "name": "Cambridge United",
+                "latest": [
+                  "F",
+                  "F",
+                  "O",
+                  "F",
+                  "F"
+                ],
+                "trend": -2,
+                "goalAvg": "0,40",
+                "shortName": "CAMBU",
+                "mediumName": "Cambridge",
+                "code": "CAMBU",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000382,
+              "uniqueLeagueId": 12692627,
+              "uniqueLeagueName": "League One",
+              "name": "League One",
+              "shortName": "League 1",
+              "country": {
+                "id": 1000007,
+                "name": "England",
+                "isoCode": "ENG",
+                "population": 0
+              },
+              "code": "FBENG3",
+              "printAbbreviation": "EL1",
+              "season": {
+                "id": 15208164,
+                "name": "League One 21/22",
+                "startDate": "2021-08-07T02:00:00+02:00",
+                "endDate": "2022-05-22T01:59:00+02:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": {
+              "homeTeam": {
+                "position": "21",
+                "points": "33",
+                "played": "38",
+                "wins": "6",
+                "draws": "15",
+                "losses": "17",
+                "goalDiff": "-21"
+              },
+              "awayTeam": {
+                "position": "17",
+                "points": "45",
+                "played": "38",
+                "wins": "11",
+                "draws": "12",
+                "losses": "15",
+                "goalDiff": "-13"
+              }
+            },
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 1,
+              "draws": 1,
+              "awayWins": 3
+            }
+          },
+          "odds": {
+            "one": "2,27",
+            "x": "3,50",
+            "two": "3,12"
+          },
+          "favouriteOdds": {
+            "one": "42.09",
+            "x": "27.30",
+            "two": "30.62"
+          },
+          "startOdds": {
+            "one": "2,27",
+            "x": "3,50",
+            "two": "3,12"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "2,27",
+                "favouriteOdds": "42,09",
+                "startOdds": "2,27"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,50",
+                "favouriteOdds": "27,30",
+                "startOdds": "3,50"
+              },
+              {
+                "outcome": "2",
+                "odds": "3,12",
+                "favouriteOdds": "30,62",
+                "startOdds": "3,12"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "44",
+            "x": "25",
+            "two": "31",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "44",
+            "refX": "25",
+            "refTwo": "31",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "27869082"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Doncaster - Charlton",
+          "extraInfo": null,
+          "eventNumber": 10,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 15352931,
+            "matchStart": "2022-03-26T16:00:00+01:00",
+            "status": "Inte startat",
+            "statusId": 0,
+            "sportEventStatus": "NotStarted",
+            "statusTime": "2022-03-26T16:00:00+01:00",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1000023,
+                "type": "home",
+                "name": "Doncaster",
+                "latest": [
+                  "O",
+                  "F",
+                  "F",
+                  "O",
+                  "V"
+                ],
+                "trend": -1,
+                "goalAvg": "0,80",
+                "shortName": "DONCA",
+                "mediumName": "Doncaster",
+                "code": "DONCA",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1000510,
+                "type": "away",
+                "name": "Charlton",
+                "latest": [
+                  "V",
+                  "V",
+                  "F",
+                  "O",
+                  "F"
+                ],
+                "trend": 0,
+                "goalAvg": "0,80",
+                "shortName": "CHARL",
+                "mediumName": "Charlton",
+                "code": "CHARL",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000382,
+              "uniqueLeagueId": 12692627,
+              "uniqueLeagueName": "League One",
+              "name": "League One",
+              "shortName": "League 1",
+              "country": {
+                "id": 1000007,
+                "name": "England",
+                "isoCode": "ENG",
+                "population": 0
+              },
+              "code": "FBENG3",
+              "printAbbreviation": "EL1",
+              "season": {
+                "id": 15208164,
+                "name": "League One 21/22",
+                "startDate": "2021-08-07T02:00:00+02:00",
+                "endDate": "2022-05-22T01:59:00+02:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": {
+              "homeTeam": {
+                "position": "23",
+                "points": "30",
+                "played": "39",
+                "wins": "8",
+                "draws": "6",
+                "losses": "25",
+                "goalDiff": "-45"
+              },
+              "awayTeam": {
+                "position": "15",
+                "points": "46",
+                "played": "38",
+                "wins": "13",
+                "draws": "7",
+                "losses": "18",
+                "goalDiff": "-4"
+              }
+            },
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 1,
+              "draws": 1,
+              "awayWins": 3
+            }
+          },
+          "odds": {
+            "one": "3,88",
+            "x": "3,53",
+            "two": "1,98"
+          },
+          "favouriteOdds": {
+            "one": "24.64",
+            "x": "27.08",
+            "two": "48.28"
+          },
+          "startOdds": {
+            "one": "3,88",
+            "x": "3,53",
+            "two": "1,98"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "3,88",
+                "favouriteOdds": "24,64",
+                "startOdds": "3,88"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,53",
+                "favouriteOdds": "27,08",
+                "startOdds": "3,53"
+              },
+              {
+                "outcome": "2",
+                "odds": "1,98",
+                "favouriteOdds": "48,28",
+                "startOdds": "1,98"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "45",
+            "x": "27",
+            "two": "28",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "45",
+            "refX": "27",
+            "refTwo": "28",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "27869090"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Sheff.W - Cheltenh.",
+          "extraInfo": null,
+          "eventNumber": 11,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 15352935,
+            "matchStart": "2022-03-26T16:00:00+01:00",
+            "status": "Inte startat",
+            "statusId": 0,
+            "sportEventStatus": "NotStarted",
+            "statusTime": "2022-03-26T16:00:00+01:00",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1000042,
+                "type": "home",
+                "name": "Sheffield W",
+                "latest": [
+                  "O",
+                  "O",
+                  "V",
+                  "F",
+                  "V"
+                ],
+                "trend": 0,
+                "goalAvg": "2,60",
+                "shortName": "SH.W",
+                "mediumName": "Sheff.W",
+                "code": "SH.W",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1001140,
+                "type": "away",
+                "name": "Cheltenham",
+                "latest": [
+                  "F",
+                  "V",
+                  "V",
+                  "F",
+                  "V"
+                ],
+                "trend": 1,
+                "goalAvg": "2,20",
+                "shortName": "CHELT",
+                "mediumName": "Cheltenh.",
+                "code": "CHELT",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000382,
+              "uniqueLeagueId": 12692627,
+              "uniqueLeagueName": "League One",
+              "name": "League One",
+              "shortName": "League 1",
+              "country": {
+                "id": 1000007,
+                "name": "England",
+                "isoCode": "ENG",
+                "population": 0
+              },
+              "code": "FBENG3",
+              "printAbbreviation": "EL1",
+              "season": {
+                "id": 15208164,
+                "name": "League One 21/22",
+                "startDate": "2021-08-07T02:00:00+02:00",
+                "endDate": "2022-05-22T01:59:00+02:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": {
+              "homeTeam": {
+                "position": "7",
+                "points": "66",
+                "played": "38",
+                "wins": "18",
+                "draws": "12",
+                "losses": "8",
+                "goalDiff": "19"
+              },
+              "awayTeam": {
+                "position": "12",
+                "points": "50",
+                "played": "39",
+                "wins": "12",
+                "draws": "14",
+                "losses": "13",
+                "goalDiff": "-8"
+              }
+            },
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 0,
+              "draws": 1,
+              "awayWins": 0
+            }
+          },
+          "odds": {
+            "one": "1,64",
+            "x": "3,99",
+            "two": "5,30"
+          },
+          "favouriteOdds": {
+            "one": "58.12",
+            "x": "23.89",
+            "two": "17.99"
+          },
+          "startOdds": {
+            "one": "1,64",
+            "x": "3,99",
+            "two": "5,30"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "1,64",
+                "favouriteOdds": "58,12",
+                "startOdds": "1,64"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,99",
+                "favouriteOdds": "23,89",
+                "startOdds": "3,99"
+              },
+              {
+                "outcome": "2",
+                "odds": "5,30",
+                "favouriteOdds": "17,99",
+                "startOdds": "5,30"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "45",
+            "x": "26",
+            "two": "29",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "44",
+            "refX": "26",
+            "refTwo": "30",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "27869098"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Shrewsb. - Lincoln",
+          "extraInfo": null,
+          "eventNumber": 12,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 15352936,
+            "matchStart": "2022-03-26T16:00:00+01:00",
+            "status": "Inte startat",
+            "statusId": 0,
+            "sportEventStatus": "NotStarted",
+            "statusTime": "2022-03-26T16:00:00+01:00",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1000446,
+                "type": "home",
+                "name": "Shrewsbury",
+                "latest": [
+                  "V",
+                  "V",
+                  "F",
+                  "O",
+                  "O"
+                ],
+                "trend": 0,
+                "goalAvg": "1,80",
+                "shortName": "SHREW",
+                "mediumName": "Shrewsb.",
+                "code": "SHREW",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1000491,
+                "type": "away",
+                "name": "Lincoln",
+                "latest": [
+                  "O",
+                  "F",
+                  "V",
+                  "F",
+                  "V"
+                ],
+                "trend": 0,
+                "goalAvg": "1,20",
+                "shortName": "LINCO",
+                "mediumName": "Lincoln",
+                "code": "LINCO",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000382,
+              "uniqueLeagueId": 12692627,
+              "uniqueLeagueName": "League One",
+              "name": "League One",
+              "shortName": "League 1",
+              "country": {
+                "id": 1000007,
+                "name": "England",
+                "isoCode": "ENG",
+                "population": 0
+              },
+              "code": "FBENG3",
+              "printAbbreviation": "EL1",
+              "season": {
+                "id": 15208164,
+                "name": "League One 21/22",
+                "startDate": "2021-08-07T02:00:00+02:00",
+                "endDate": "2022-05-22T01:59:00+02:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": {
+              "homeTeam": {
+                "position": "16",
+                "points": "45",
+                "played": "39",
+                "wins": "11",
+                "draws": "12",
+                "losses": "16",
+                "goalDiff": "3"
+              },
+              "awayTeam": {
+                "position": "18",
+                "points": "42",
+                "played": "38",
+                "wins": "11",
+                "draws": "9",
+                "losses": "18",
+                "goalDiff": "-8"
+              }
+            },
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 2,
+              "draws": 1,
+              "awayWins": 2
+            }
+          },
+          "odds": {
+            "one": "2,11",
+            "x": "3,39",
+            "two": "3,60"
+          },
+          "favouriteOdds": {
+            "one": "45.28",
+            "x": "28.18",
+            "two": "26.54"
+          },
+          "startOdds": {
+            "one": "2,11",
+            "x": "3,39",
+            "two": "3,60"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "2,11",
+                "favouriteOdds": "45,28",
+                "startOdds": "2,11"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,39",
+                "favouriteOdds": "28,18",
+                "startOdds": "3,39"
+              },
+              {
+                "outcome": "2",
+                "odds": "3,60",
+                "favouriteOdds": "26,54",
+                "startOdds": "3,60"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "45",
+            "x": "26",
+            "two": "29",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "45",
+            "refX": "25",
+            "refTwo": "30",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "27869100"
+            }
+          ]
+        },
+        {
+          "cancelled": false,
+          "eventComment": "",
+          "eventDescription": "Port Vale - Sutton U",
+          "extraInfo": null,
+          "eventNumber": 13,
+          "eventTypeId": 1,
+          "participantType": "Team",
+          "match": {
+            "matchId": 16631660,
+            "matchStart": "2022-03-26T16:00:00+01:00",
+            "status": "Inte startat",
+            "statusId": 0,
+            "sportEventStatus": "NotStarted",
+            "statusTime": "2022-03-26T16:00:00+01:00",
+            "coverage": 1,
+            "participants": [
+              {
+                "id": 1000048,
+                "type": "home",
+                "name": "Port Vale",
+                "latest": [
+                  "O",
+                  "V",
+                  "V",
+                  "V",
+                  "F"
+                ],
+                "trend": 1,
+                "goalAvg": "1,80",
+                "shortName": "PORTV",
+                "mediumName": "Port Vale",
+                "code": "PORTV",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              },
+              {
+                "id": 1007797,
+                "type": "away",
+                "name": "Sutton Utd",
+                "latest": [
+                  "V",
+                  "O",
+                  "F",
+                  "F",
+                  "V"
+                ],
+                "trend": 0,
+                "goalAvg": "2,60",
+                "shortName": "Sutto",
+                "mediumName": "Sutton U",
+                "code": "Sutto",
+                "countryId": 1000007,
+                "countryName": "England",
+                "isoCode": "ENG",
+                "managerId": 0,
+                "arenaId": 0
+              }
+            ],
+            "league": {
+              "id": 1000416,
+              "uniqueLeagueId": 12692628,
+              "uniqueLeagueName": "League Two",
+              "name": "League Two",
+              "shortName": "League 2",
+              "country": {
+                "id": 1000007,
+                "name": "England",
+                "isoCode": "ENG",
+                "population": 0
+              },
+              "code": "FBENG4",
+              "printAbbreviation": "EL2",
+              "season": {
+                "id": 15208165,
+                "name": "League Two 21/22",
+                "startDate": "2021-08-07T02:00:00+02:00",
+                "endDate": "2022-05-29T01:59:00+02:00",
+                "legacyKey": 0
+              },
+              "doShow": false,
+              "isHome": false,
+              "legacyKey": 0,
+              "numTeams": 0,
+              "popular": false,
+              "rank": 0
+            },
+            "leagueTable": {
+              "homeTeam": {
+                "position": "9",
+                "points": "60",
+                "played": "37",
+                "wins": "16",
+                "draws": "12",
+                "losses": "9",
+                "goalDiff": "19"
+              },
+              "awayTeam": {
+                "position": "8",
+                "points": "61",
+                "played": "38",
+                "wins": "17",
+                "draws": "10",
+                "losses": "11",
+                "goalDiff": "14"
+              }
+            },
+            "result": [],
+            "media": null,
+            "mutuals": {
+              "homeWins": 0,
+              "draws": 0,
+              "awayWins": 1
+            }
+          },
+          "odds": {
+            "one": "2,03",
+            "x": "3,37",
+            "two": "3,82"
+          },
+          "favouriteOdds": {
+            "one": "46.87",
+            "x": "28.23",
+            "two": "24.90"
+          },
+          "startOdds": {
+            "one": "2,03",
+            "x": "3,37",
+            "two": "3,82"
+          },
+          "betMetrics": {
+            "eventTypeId": 1,
+            "eventType": "1X2",
+            "eventSubTypeId": 2,
+            "eventSubType": "Fulltid",
+            "values": [
+              {
+                "outcome": "1",
+                "odds": "2,03",
+                "favouriteOdds": "46,87",
+                "startOdds": "2,03"
+              },
+              {
+                "outcome": "X",
+                "odds": "3,37",
+                "favouriteOdds": "28,23",
+                "startOdds": "3,37"
+              },
+              {
+                "outcome": "2",
+                "odds": "3,82",
+                "favouriteOdds": "24,90",
+                "startOdds": "3,82"
+              }
+            ]
+          },
+          "outcomes": null,
+          "svenskaFolket": {
+            "one": "44",
+            "x": "29",
+            "two": "27",
+            "date": "2022-03-23T07:47:39.669+01:00",
+            "refOne": "45",
+            "refX": "28",
+            "refTwo": "27",
+            "refDate": "2022-03-19T15:55:35.359+01:00"
+          },
+          "tioTidningarsTips": null,
+          "providerIds": [
+            {
+              "provider": "BetRadar",
+              "id": "27870154"
+            }
+          ]
+        }
+      ],
+      "roomKeys": {
+        "keys": [
+          "junoinfopusher_stryk_4734_drawstart",
+          "junoinfopusher_stryk_4734_drawresult",
+          "junoinfopusher_16332633_sportmatchcurrentresult",
+          "junoinfopusher_16332636_sportmatchcurrentresult",
+          "junoinfopusher_16332637_sportmatchcurrentresult",
+          "junoinfopusher_16474346_sportmatchcurrentresult",
+          "junoinfopusher_16332635_sportmatchcurrentresult",
+          "junoinfopusher_16332634_sportmatchcurrentresult",
+          "junoinfopusher_15352932_sportmatchcurrentresult",
+          "junoinfopusher_15352928_sportmatchcurrentresult",
+          "junoinfopusher_15352927_sportmatchcurrentresult",
+          "junoinfopusher_15352931_sportmatchcurrentresult",
+          "junoinfopusher_15352935_sportmatchcurrentresult",
+          "junoinfopusher_15352936_sportmatchcurrentresult",
+          "junoinfopusher_16631660_sportmatchcurrentresult"
+        ],
+        "timeToLive": "2022-04-04T17:00:00+02:00"
+      },
+      "retailerOpenTime": "2022-03-23T07:00:00+01:00",
+      "retailerCloseTime": "2022-03-26T15:59:00+01:00",
+      "retailerCancelCloseTime": "2022-03-26T16:00:00+01:00"
+    }
+  ],
+  "error": null,
+  "requestInfo": {
+    "elapsedTime": 2,
+    "apiVersion": 1
+  },
+  "requestId": "9e077185-a3c8-408d-899c-a458a0073d5e",
+  "sessionId": null,
+  "deviceId": "438f17a0-334b-4295-d2ae-2673844eec93",
+  "session": null,
+  "sessionUser": null,
+  "clientInfo": null
+}
