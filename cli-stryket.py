@@ -108,13 +108,15 @@ def score_to_sign(score: str) -> str:
     return "x"
 
 
-def update_table(system: str, scores: list(str)) -> list(str):
+def update(system: str, scores: list(str)) -> list(str):
     scores = generate_random_goal(scores)
+    correct = 0
     for i, row in enumerate(system):
         stdscr.addstr(TABLE_START_ROW_INDEX + i, 0, f"{i+1}. {GAMES[i]}")
         stdscr.addstr(TABLE_START_ROW_INDEX + i, RESULT_START_COL_INDEX, scores[i])
         formatted_row = format_system_row(row)
         for k, sign in enumerate(formatted_row):
+            correct += sign in score_to_sign(scores[i])
             stdscr.addstr(
                 TABLE_START_ROW_INDEX + i,
                 SYSTEM_START_COL_INDEX + k,
@@ -126,6 +128,7 @@ def update_table(system: str, scores: list(str)) -> list(str):
             stdscr.refresh()
 
     stdscr.addstr(TABLE_END_ROW_INDEX + 1, 0, "")
+    stdscr.addstr(TABLE_END_ROW_INDEX + 2, 0, f"Antal rätt: {correct}")
     return scores
 
 
@@ -137,9 +140,9 @@ def render(system: list(str)) -> int:
 
     scores = ["0-0"] * 13
     while True:
-        scores = update_table(system, scores)
-        if stdscr.get_wch() == "\n":
-            return 0
+        scores = update(system, scores)
+        # if stdscr.get_wch() == "\n":
+        #    return 0
         time.sleep(2)
 
 
