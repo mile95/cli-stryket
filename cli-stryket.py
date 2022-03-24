@@ -28,6 +28,12 @@ SYSTEM_START_COL_INDEX = 45
 
 stdscr = curses.initscr()
 
+if curses.has_colors():
+    curses.start_color()
+    curses.use_default_colors()
+
+    curses.init_pair(1, curses.COLOR_BLUE, curses.COLOR_WHITE)
+
 
 class InvalidSystemException(Exception):
     pass
@@ -48,6 +54,25 @@ def validate_system(system: list(str)) -> list(str):
         if row not in ["1", "x", "2", "1x", "12", "x2", "1x2"]:
             raise InvalidSystemException(f"Row {i + 1}: {row} is not valid")
     return system
+
+
+def format_system_row(system_row: str) -> str:
+    if len(system_row) == 3:
+        return system_row
+    if len(system_row) == 2:
+        if "1" not in system_row:
+            return " x2"
+        if "x" not in system_row:
+            return "1 2"
+        if "2" not in system_row:
+            return "1x "
+    if len(system_row) == 1:
+        if "1" in system_row:
+            return "1  "
+        if "x" in system_row:
+            return " x "
+        if "2" in system_row:
+            return "  2"
 
 
 def generate_random_goal(scores: list(str)) -> list(str):
@@ -73,19 +98,23 @@ def update_table(system: str, scores: list(str)) -> list(str):
     for i, row in enumerate(system):
         stdscr.addstr(TABLE_START_ROW_INDEX + i, 0, f"{i+1}. {GAMES[i]}")
         stdscr.addstr(TABLE_START_ROW_INDEX + i, RESULT_START_COL_INDEX, scores[i])
-        stdscr.addstr(TABLE_START_ROW_INDEX + i, SYSTEM_START_COL_INDEX, system[i])
+        stdscr.addstr(
+            TABLE_START_ROW_INDEX + i, SYSTEM_START_COL_INDEX, format_system_row(row)
+        )
         stdscr.refresh()
     return scores
 
 
-def render(system: list(str)) -> None:
-    stdscr.addstr(HEADER)
+def render(system: list(str)) -> int:
+    stdscr.addstr(0, 0, HEADER, curses.color_pair(1))
     stdscr.addstr(2, 0, "Matcher")
     stdscr.addstr(2, RESULT_START_COL_INDEX, "Resultat")
     stdscr.addstr(2, SYSTEM_START_COL_INDEX, "System")
 
     scores = ["0-0"] * 13
     while True:
+        # if stdscr.get_wch() == '\n':
+        #    return 0
         scores = update_table(system, scores)
         time.sleep(2)
 
@@ -104,7 +133,7 @@ def main() -> int:
         print(f"Invalid system input. {e}")
         return 1
 
-    render(system)
+    return render(system)
 
 
 if __name__ == "__main__":
