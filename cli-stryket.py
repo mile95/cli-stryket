@@ -23,16 +23,20 @@ GAMES = [
 ]
 
 TABLE_START_ROW_INDEX = 4
+TABLE_END_ROW_INDEX = TABLE_START_ROW_INDEX + 13
 RESULT_START_COL_INDEX = 30
 SYSTEM_START_COL_INDEX = 45
-
 stdscr = curses.initscr()
 
 if curses.has_colors():
     curses.start_color()
     curses.use_default_colors()
 
-    curses.init_pair(1, curses.COLOR_BLUE, curses.COLOR_WHITE)
+    # -1 gives transparent background
+    curses.init_pair(1, curses.COLOR_BLUE, -1)
+    curses.init_pair(2, curses.COLOR_GREEN, -1)
+    curses.init_pair(3, curses.COLOR_WHITE, -1)
+    curses.init_pair(4, curses.COLOR_RED, -1)
 
 
 class InvalidSystemException(Exception):
@@ -93,15 +97,35 @@ def generate_random_goal(scores: list(str)) -> list(str):
     return scores
 
 
+def score_to_sign(score: str) -> str:
+    home = int(score.split("-")[0])
+    away = int(score.split("-")[1])
+
+    if home > away:
+        return "1"
+    if home < away:
+        return "2"
+    return "x"
+
+
 def update_table(system: str, scores: list(str)) -> list(str):
     scores = generate_random_goal(scores)
     for i, row in enumerate(system):
         stdscr.addstr(TABLE_START_ROW_INDEX + i, 0, f"{i+1}. {GAMES[i]}")
         stdscr.addstr(TABLE_START_ROW_INDEX + i, RESULT_START_COL_INDEX, scores[i])
-        stdscr.addstr(
-            TABLE_START_ROW_INDEX + i, SYSTEM_START_COL_INDEX, format_system_row(row)
-        )
-        stdscr.refresh()
+        formatted_row = format_system_row(row)
+        for k, sign in enumerate(formatted_row):
+            stdscr.addstr(
+                TABLE_START_ROW_INDEX + i,
+                SYSTEM_START_COL_INDEX + k,
+                sign,
+                curses.color_pair(2)
+                if sign in score_to_sign(scores[i])
+                else curses.color_pair(4),
+            )
+            stdscr.refresh()
+
+    stdscr.addstr(TABLE_END_ROW_INDEX + 1, 0, "")
     return scores
 
 
@@ -113,9 +137,9 @@ def render(system: list(str)) -> int:
 
     scores = ["0-0"] * 13
     while True:
-        # if stdscr.get_wch() == '\n':
-        #    return 0
         scores = update_table(system, scores)
+        if stdscr.get_wch() == "\n":
+            return 0
         time.sleep(2)
 
 
