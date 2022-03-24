@@ -6,6 +6,8 @@ Enter your system rows and let the CLI correct it for you, live!
 
 The CLI is built using the curses python library which supplies a terminal-independent screen-painting and keyboard-handling facility for text-based terminals.
 
+![cli-stryket](cli-stryket.png)
+
 ## How to run
 
 `python3 cli-stryket.py system.txt`
