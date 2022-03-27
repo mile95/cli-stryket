@@ -3,6 +3,14 @@ import re
 from bs4 import BeautifulSoup
 from pprint import pprint
 from requests_html import HTMLSession
+from enum import Enum
+
+
+class GameStatus(Enum):
+    live = 1
+    finished = 2
+    not_started = 3
+
 
 URL = "https://spela.svenskaspel.se/resultat/stryktipset"
 
@@ -15,7 +23,6 @@ game_divs = soup.find_all("div", {"class": "js-expandable-box"})
 
 games = []
 
-# TODO: Handle case when games are done.
 for i, div in enumerate(game_divs):
     raw_info = div.get_text().replace("\n", " ").replace("\r", "")
     info_parts = raw_info.split()
@@ -25,20 +32,23 @@ for i, div in enumerate(game_divs):
     except ValueError:
         break
 
-    started = False
+    status = ""
     rev_info_parts = list(reversed(info_parts))
     try:
         # If the game has started, the last item is the score of the away team
         # If the game has not started, the last item is the start time. Eg 18:00.
         int(rev_info_parts[0])
-        started = True
+        status = GameStatus.live
     except ValueError:
-        pass
+        if ":" in rev_info_parts[0]:
+            status = GameStaus.not_started
+        else:
+            status = GameStatus.finished
 
     game = {}
-    game["started"] = started
+    game["status"] = status.name
     game["number"] = i + 1
-    if started:
+    if status == GameStatus.live:
         goals_away = rev_info_parts[0]
         goals_home = rev_info_parts[2]
         time = rev_info_parts[4]
@@ -56,9 +66,7 @@ for i, div in enumerate(game_divs):
         game["goals_home"] = goals_home
         game["goals_away"] = goals_away
         game["time"] = time
-        game["home_team"] = home_team
-        game["away_team"] = away_team
-    else:
+    elif status == GameStatus.not_started:
         start_time = rev_info_parts[1] + " " + rev_info_parts[0]
         team_names = list(reversed(rev_info_parts[2:-1]))
         home_team = ""
@@ -72,10 +80,26 @@ for i, div in enumerate(game_divs):
             else:
                 away_team += item
         game["start_time"] = start_time
+    elif status == GameStatus.finished:
+        goals_home = info_parts[1]
+        goals_away = info_parts[3]
+        home_team = ""
+        away_team = ""
+        team_names = info_parts[5:]
+        home_team_done = False
+        for item in team_names:
+            if item == "-":
+                home_team_done = True
+            elif not home_team_done:
+                home_team += item
+            else:
+                away_team += item
+        game["goals_home"] = goals_home
+        game["goals_away"] = goals_away
+
     game["home_team"] = home_team
     game["away_team"] = away_team
 
     games.append(game)
 
-for game in games:
-    pprint(game)
+pprint(games)
