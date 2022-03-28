@@ -117,7 +117,7 @@ def extract_game_info(soup: BeautifulSoup) -> list(dict):
                 status = GameStatus.finished
 
         game = {}
-        game["status"] = status.name
+        game["status"] = status
         game["number"] = i + 1
         if status == GameStatus.live:
             home_team, away_team = get_team(rev_info_parts[5:-1])
@@ -156,4 +156,3 @@ def get_game_information() -> list(dict):
     """
     soup = fetch_raw_data()
     return extract_game_info(soup)
-
