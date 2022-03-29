@@ -47,27 +47,24 @@ def update(system: str, games: list(dict)):
         if game["status"] in [GameStatus.live, GameStatus.finished]:
             goal_home = game["goals_home"]
             goal_away = game["goals_away"]
+            score = f"{goal_home}-{goal_away}"
             stdscr.addstr(
                 TABLE_START_ROW_INDEX + i,
                 RESULT_START_COL_INDEX,
-                f"{goal_home}-{goal_away}",
+                score,
             )
             stdscr.addstr(
                 TABLE_START_ROW_INDEX + i,
                 TIME_START_COL_INDEX,
-                "Finished" if game["status"] == GameStatus.finished else game["time"],
+                "Slut" if game["status"] == GameStatus.finished else game["time"],
             )
         elif game["status"] == GameStatus.not_started:
-            stdscr.addstr(TABLE_START_ROW_INDEX + i, RESULT_START_COL_INDEX, "0-0")
+            score = "0-0"
+            stdscr.addstr(TABLE_START_ROW_INDEX + i, RESULT_START_COL_INDEX, score)
             stdscr.addstr(
                 TABLE_START_ROW_INDEX + i, TIME_START_COL_INDEX, game["start_time"]
             )
         for k, sign in enumerate(row):
-            score = ""
-            if game["status"] == GameStatus.not_started:
-                score = "0-0"
-            else:
-                score = f"{game['goals_home']}-{game['goals_away']}"
             correct += sign in score_to_sign(score)
             stdscr.addstr(
                 TABLE_START_ROW_INDEX + i,
@@ -77,18 +74,18 @@ def update(system: str, games: list(dict)):
                 if sign in score_to_sign(score)
                 else curses.color_pair(4),
             )
-            stdscr.refresh()
 
     stdscr.addstr(TABLE_END_ROW_INDEX + 1, 0, "")
     stdscr.addstr(TABLE_END_ROW_INDEX + 2, 0, f"Antal rätt: {correct}")
     stdscr.addstr(TABLE_END_ROW_INDEX + 3, 0, "")
+    stdscr.refresh()
 
 
 def render(system: list(str)) -> int:
     stdscr.addstr(0, 0, HEADER, curses.color_pair(1))
     stdscr.addstr(2, 0, "Matcher")
     stdscr.addstr(2, RESULT_START_COL_INDEX, "Resultat")
-    stdscr.addstr(2, TIME_START_COL_INDEX, "Time")
+    stdscr.addstr(2, TIME_START_COL_INDEX, "Tid")
     stdscr.addstr(2, SYSTEM_START_COL_INDEX, "System")
 
     while True:
