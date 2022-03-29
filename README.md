@@ -8,6 +8,15 @@ The CLI is built using the curses python library which supplies a terminal-indep
 
 ![cli-stryket](cli-stryket.png)
 
+## Installation
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+
+pip3 install -r requirements.txt
+
+```
 ## How to run
 
 `python3 cli-stryket.py system.txt`
@@ -32,12 +41,6 @@ x
 x2
 ```
 
-One row per game. 
+## How does it work?
 
-## TODO
-
-I've only found a hidden API for Stryktipset, which provides data before the games start. See the temporary script in main.py.
-
-I need to find an API for getting the live results of the 13 games.
-
-Currently, the CLI runs with fake data.
+TODO
