@@ -57,6 +57,7 @@ def fetch_raw_data() -> BeautifulSoup:
     session = HTMLSession()
     r = session.get(URL)
     r.html.render()
+    session.close()
     return BeautifulSoup(r.html.raw_html, "html.parser")
 
 

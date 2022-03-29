@@ -1,6 +1,7 @@
 from __future__ import annotations
 from read_input import read_input
 from stryket_scraper import get_game_information, GameStatus
+from datetime import datetime
 
 import sys
 import time
@@ -74,10 +75,14 @@ def update(system: str, games: list(dict)):
                 if sign in score_to_sign(score)
                 else curses.color_pair(4),
             )
+    latest_updated_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     stdscr.addstr(TABLE_END_ROW_INDEX + 1, 0, "")
     stdscr.addstr(TABLE_END_ROW_INDEX + 2, 0, f"Antal rätt: {correct}")
     stdscr.addstr(TABLE_END_ROW_INDEX + 3, 0, "")
+    stdscr.addstr(
+        TABLE_END_ROW_INDEX + 4, 0, f"Senast uppdaterad: {latest_updated_time}"
+    )
     stdscr.refresh()
 
 
