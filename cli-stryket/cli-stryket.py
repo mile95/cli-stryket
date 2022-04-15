@@ -7,7 +7,7 @@ import sys
 import time
 import curses
 
-HEADER = "Stryktipset v12 2022-03-12"
+HEADER = "Stryktipset"
 
 TABLE_START_ROW_INDEX = 4
 TABLE_END_ROW_INDEX = TABLE_START_ROW_INDEX + 13
@@ -97,7 +97,6 @@ def render(system: list(str)) -> int:
         games = get_game_information()
         update(system, games)
         time.sleep(30)
-
 
 def main() -> int:
     try:
