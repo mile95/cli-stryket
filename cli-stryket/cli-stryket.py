@@ -83,6 +83,8 @@ def update(system: str, games: list(dict)):
     stdscr.addstr(
         TABLE_END_ROW_INDEX + 4, 0, f"Senast uppdaterad: {latest_updated_time}"
     )
+    stdscr.addstr(TABLE_END_ROW_INDEX + 6, 0, f"Avsluta med q (delayed)")
+    stdscr.addstr(TABLE_END_ROW_INDEX + 7, 0, "")
     stdscr.refresh()
 
 
@@ -92,11 +94,14 @@ def render(system: list(str)) -> int:
     stdscr.addstr(2, RESULT_START_COL_INDEX, "Resultat")
     stdscr.addstr(2, TIME_START_COL_INDEX, "Tid")
     stdscr.addstr(2, SYSTEM_START_COL_INDEX, "System")
+    stdscr.nodelay(True)
 
     while True:
         games = get_game_information()
         update(system, games)
-        time.sleep(30)
+        if stdscr.getch() == ord("q"):
+            return 0
+        curses.napms(3000)
 
 
 def main() -> int:
