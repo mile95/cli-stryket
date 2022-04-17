@@ -98,6 +98,7 @@ def render(system: list(str)) -> int:
         update(system, games)
         time.sleep(30)
 
+
 def main() -> int:
     try:
         filename = sys.argv[1]

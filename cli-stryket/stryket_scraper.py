@@ -113,7 +113,7 @@ def extract_game_info(soup: BeautifulSoup) -> list(dict):
         except ValueError:
             # If the game has not started, the last item is the start time. Eg 18:00.
             if ":" in rev_info_parts[0]:
-                status = GameStaus.not_started
+                status = GameStatus.not_started
             else:
                 status = GameStatus.finished
 
@@ -121,12 +121,12 @@ def extract_game_info(soup: BeautifulSoup) -> list(dict):
         game["status"] = status
         game["number"] = i + 1
         if status == GameStatus.live:
-            home_team, away_team = get_team(rev_info_parts[5:-1])
+            home_team, away_team = get_teams(list(reversed(rev_info_parts[5:-1])))
             game["goals_home"] = rev_info_parts[2]
             game["goals_away"] = rev_info_parts[0]
             game["time"] = rev_info_parts[4]
         elif status == GameStatus.not_started:
-            home_team, away_team = get_teams(info_parts[2:-1])
+            home_team, away_team = get_teams(list(reversed(rev_info_parts[2:-1])))
             game["start_time"] = rev_info_parts[1] + " " + rev_info_parts[0]
         elif status == GameStatus.finished:
             home_team, away_team = get_teams(info_parts[5:])
