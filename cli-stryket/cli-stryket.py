@@ -6,15 +6,18 @@ from datetime import datetime
 import sys
 import time
 import curses
+import argparse
 
 HEADER = "Stryktipset"
-
 TABLE_START_ROW_INDEX = 4
 TABLE_END_ROW_INDEX = TABLE_START_ROW_INDEX + 13
 RESULT_START_COL_INDEX = 45
 TIME_START_COL_INDEX = 30
 SYSTEM_START_COL_INDEX = 60
 stdscr = curses.initscr()
+
+parser = argparse.ArgumentParser(description="Command Line Application for Stryktipset")
+parser.add_argument("--input-file", type=str, required=True)
 
 if curses.has_colors():
     curses.start_color()
@@ -105,12 +108,8 @@ def render(system: list(str)) -> int:
 
 
 def main() -> int:
-    try:
-        filename = sys.argv[1]
-    except IndexError:
-        print("Please provide the filename with your system")
-        return 1
-
+    args = parser.parse_args()
+    filename = args.input_file
     system = read_input(filename)
     return render(system)
 
