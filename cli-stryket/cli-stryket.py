@@ -60,7 +60,7 @@ def update(system: str, games: list(dict)):
             stdscr.addstr(
                 TABLE_START_ROW_INDEX + i,
                 TIME_START_COL_INDEX,
-                "Slut" if game["status"] == GameStatus.finished else game["time"],
+                "End" if game["status"] == GameStatus.finished else game["time"],
             )
         elif game["status"] == GameStatus.not_started:
             score = "0-0"
@@ -81,21 +81,21 @@ def update(system: str, games: list(dict)):
     latest_updated_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     stdscr.addstr(TABLE_END_ROW_INDEX + 1, 0, "")
-    stdscr.addstr(TABLE_END_ROW_INDEX + 2, 0, f"Antal rätt: {correct}")
+    stdscr.addstr(TABLE_END_ROW_INDEX + 2, 0, f"Correct: {correct}")
     stdscr.addstr(TABLE_END_ROW_INDEX + 3, 0, "")
     stdscr.addstr(
-        TABLE_END_ROW_INDEX + 4, 0, f"Senast uppdaterad: {latest_updated_time}"
+        TABLE_END_ROW_INDEX + 4, 0, f"Last updated: {latest_updated_time}"
     )
-    stdscr.addstr(TABLE_END_ROW_INDEX + 6, 0, f"Avsluta med q (delayed)")
+    stdscr.addstr(TABLE_END_ROW_INDEX + 6, 0, f"Exit by pressing [q] (delayed)")
     stdscr.addstr(TABLE_END_ROW_INDEX + 7, 0, "")
     stdscr.refresh()
 
 
 def render(system: list(str)) -> int:
     stdscr.addstr(0, 0, HEADER, curses.color_pair(1))
-    stdscr.addstr(2, 0, "Matcher")
-    stdscr.addstr(2, RESULT_START_COL_INDEX, "Resultat")
-    stdscr.addstr(2, TIME_START_COL_INDEX, "Tid")
+    stdscr.addstr(2, 0, "Games")
+    stdscr.addstr(2, RESULT_START_COL_INDEX, "Score")
+    stdscr.addstr(2, TIME_START_COL_INDEX, "Time")
     stdscr.addstr(2, SYSTEM_START_COL_INDEX, "System")
     stdscr.nodelay(True)
 
