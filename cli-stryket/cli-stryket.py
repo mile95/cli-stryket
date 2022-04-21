@@ -14,20 +14,9 @@ TABLE_END_ROW_INDEX = TABLE_START_ROW_INDEX + 13
 RESULT_START_COL_INDEX = 45
 TIME_START_COL_INDEX = 30
 SYSTEM_START_COL_INDEX = 60
-stdscr = curses.initscr()
 
 parser = argparse.ArgumentParser(description="Command Line Application for Stryktipset")
-parser.add_argument("--input-file", type=str, required=True)
-
-if curses.has_colors():
-    curses.start_color()
-    curses.use_default_colors()
-
-    # -1 gives transparent background
-    curses.init_pair(1, curses.COLOR_BLUE, -1)
-    curses.init_pair(2, curses.COLOR_GREEN, -1)
-    curses.init_pair(3, curses.COLOR_WHITE, -1)
-    curses.init_pair(4, curses.COLOR_RED, -1)
+parser.add_argument("--input-file", type=str, required=False)
 
 
 def score_to_sign(score: str) -> str:
@@ -41,7 +30,7 @@ def score_to_sign(score: str) -> str:
     return "x"
 
 
-def update(system: str, games: list(dict)):
+def update(stdscr: _Curses.Window, system: str, games: list(dict)):
     correct = 0
     for i, row in enumerate(system):
         game = games[i]
@@ -90,8 +79,24 @@ def update(system: str, games: list(dict)):
     stdscr.addstr(TABLE_END_ROW_INDEX + 7, 0, "")
     stdscr.refresh()
 
+def get_system() -> list[str]:
+    args = parser.parse_args()
+    filename = args.input_file
+    if filename:
+        return read_input(filename)
 
-def render(system: list(str)) -> int:
+def render(stdscr: Curses._CursesWindow) -> int:
+    system = get_system()
+    if curses.has_colors():
+        curses.start_color()
+        curses.use_default_colors()
+
+        # -1 gives transparent background
+        curses.init_pair(1, curses.COLOR_BLUE, -1)
+        curses.init_pair(2, curses.COLOR_GREEN, -1)
+        curses.init_pair(3, curses.COLOR_WHITE, -1)
+        curses.init_pair(4, curses.COLOR_RED, -1)
+
     stdscr.addstr(0, 0, HEADER, curses.color_pair(1))
     stdscr.addstr(2, 0, "Games")
     stdscr.addstr(2, RESULT_START_COL_INDEX, "Score")
@@ -101,18 +106,14 @@ def render(system: list(str)) -> int:
 
     while True:
         games = get_game_information()
-        update(system, games)
+        update(stdscr, system, games)
         if stdscr.getch() == ord("q"):
             return 0
         curses.napms(3000)
 
 
 def main() -> int:
-    args = parser.parse_args()
-    filename = args.input_file
-    system = read_input(filename)
-    return render(system)
-
+    return curses.wrapper(render)
 
 if __name__ == "__main__":
     raise SystemExit(main())
