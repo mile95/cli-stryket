@@ -79,14 +79,54 @@ def update(stdscr: _Curses.Window, system: str, games: list(dict)):
     stdscr.addstr(TABLE_END_ROW_INDEX + 7, 0, "")
     stdscr.refresh()
 
-def get_system() -> list[str]:
+def ask_for_system_input(stdscr: Curses._CursesWindow) -> list[str]:
+    stdscr.clear()
+    curses.echo()
+    stdscr.addstr(0, 0, HEADER) 
+    stdscr.addstr(2, 0, "Enter your system below")
+    for i in range(13):
+        stdscr.addstr(i + 4, 0, f'{i + 1}:')
+    stdscr.addstr(20, 0, "Press [e] to validate and save system") 
+    stdscr.refresh()
+
+    system = []
+    start_row = 4
+    current_row = start_row
+    stdscr.move(current_row, 4)
+    done = False
+    while not done:
+        if len(system) == 13:
+            done = True
+        c = stdscr.getch()
+        if c == curses.KEY_DOWN:
+            if current_row < start_row + 12:
+                current_row += 1
+                stdscr.move(current_row, 4)
+        elif c == curses.KEY_UP:
+            if current_row > start_row:
+                current_row -= 1
+                stdscr.move(current_row, 4)
+        # 101 = e
+        elif c == 101:
+            curses.noecho()
+            for i in range(13):
+                system.append(stdscr.getstr(start_row + i, 4, 3))
+            done = True
+
+        elif c == curses.KEY_ENTER or c == 10 or c == 13:
+            # workaround to not move curses to start of line
+            stdscr.move(current_row, 4)
+        stdscr.refresh()
+
+def get_system(stdscr: Curses._CursesWindow) -> list[str]:
     args = parser.parse_args()
     filename = args.input_file
     if filename:
         return read_input(filename)
+    return ask_for_system_input(stdscr)
 
 def render(stdscr: Curses._CursesWindow) -> int:
-    system = get_system()
+    system = get_system(stdscr)
     if curses.has_colors():
         curses.start_color()
         curses.use_default_colors()
