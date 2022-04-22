@@ -15,9 +15,6 @@ RESULT_START_COL_INDEX = 45
 TIME_START_COL_INDEX = 30
 SYSTEM_START_COL_INDEX = 60
 
-parser = argparse.ArgumentParser(description="Command Line Application for Stryktipset")
-parser.add_argument("--input-file", type=str, required=False)
-
 
 def score_to_sign(score: str) -> str:
     home = int(score.split("-")[0])
@@ -72,21 +69,14 @@ def update(stdscr: _Curses.Window, system: str, games: list(dict)):
     stdscr.addstr(TABLE_END_ROW_INDEX + 1, 0, "")
     stdscr.addstr(TABLE_END_ROW_INDEX + 2, 0, f"Correct: {correct}")
     stdscr.addstr(TABLE_END_ROW_INDEX + 3, 0, "")
-    stdscr.addstr(
-        TABLE_END_ROW_INDEX + 4, 0, f"Last updated: {latest_updated_time}"
-    )
-    stdscr.addstr(TABLE_END_ROW_INDEX + 6, 0, f"Exit by pressing [q] (delayed)")
+    stdscr.addstr(TABLE_END_ROW_INDEX + 4, 0, f"Last updated: {latest_updated_time}")
+    stdscr.addstr(TABLE_END_ROW_INDEX + 6, 0, f"Press [q] to exit (delayed)")
     stdscr.addstr(TABLE_END_ROW_INDEX + 7, 0, "")
     stdscr.refresh()
 
-def get_system() -> list[str]:
-    args = parser.parse_args()
-    filename = args.input_file
-    if filename:
-        return read_input(filename)
 
-def render(stdscr: Curses._CursesWindow) -> int:
-    system = get_system()
+def render(stdscr: Curses._CursesWindow, args: argparse.Namespace) -> int:
+    system = read_input(args.input_file)
     if curses.has_colors():
         curses.start_color()
         curses.use_default_colors()
@@ -113,7 +103,14 @@ def render(stdscr: Curses._CursesWindow) -> int:
 
 
 def main() -> int:
-    return curses.wrapper(render)
+    parser = argparse.ArgumentParser(
+        description="Command Line Application for Stryktipset"
+    )
+    parser.add_argument("--input-file", type=str, required=True)
+    args = parser.parse_args()
+
+    return curses.wrapper(render, args)
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
