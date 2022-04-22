@@ -8,8 +8,7 @@ cli-stryket fetches live data and correct your system in real-time.
 
 The CLI is built using the curses python library which supplies a terminal-independent screen-painting and keyboard-handling facility for text-based terminals.
 
-![cli-stryket](assets/cli-stryket.png)
-
+![cli-stryket](https://user-images.githubusercontent.com/8545435/164811418-6c3ec8da-7d9f-41ae-b400-5c2d94143595.png)
 ## Requirements
 - Python3
 
