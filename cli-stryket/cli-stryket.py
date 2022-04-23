@@ -99,7 +99,7 @@ def render(stdscr: Curses._CursesWindow, args: argparse.Namespace) -> int:
         update(stdscr, system, games)
         if stdscr.getch() == ord("q"):
             return 0
-        curses.napms(3000)
+        curses.napms(30*1000)
 
 
 def main() -> int:
