@@ -15,17 +15,15 @@ The CLI is built using the curses python library which supplies a terminal-indep
 ## Installation
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-
-pip3 install -r requirements.txt
+git clone https://github.com/mile95/cli-stryket.git
+cd cli-stryket
+pip3 install .
 
 ```
 ## How to run
 
 ```
-cd cli-stryket
-python3 cli_stryket.py --input-file system.txt
+cli_stryket --input-file system.txt
 ```
 
 `system.txt` is the file containing your system. 

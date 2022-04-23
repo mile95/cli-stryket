@@ -1,5 +1,5 @@
 from __future__ import annotations
-from system_exception import InvalidSystemException
+from cli_stryket.system_exception import InvalidSystemException
 
 
 def read_input(filename: str) -> list(str):

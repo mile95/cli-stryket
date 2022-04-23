@@ -1,6 +1,6 @@
 from __future__ import annotations
-from read_input import read_input
-from stryket_scraper import get_game_information, GameStatus
+from cli_stryket.read_input import read_input
+from cli_stryket.stryket_scraper import get_game_information, GameStatus
 from datetime import datetime
 
 import sys
