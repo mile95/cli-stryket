@@ -25,7 +25,7 @@ pip3 install -r requirements.txt
 
 ```
 cd cli-stryket
-python3 cli-stryket.py --input-file system.txt
+python3 cli_stryket.py --input-file system.txt
 ```
 
 `system.txt` is the file containing your system. 
