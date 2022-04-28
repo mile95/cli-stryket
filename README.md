@@ -47,6 +47,11 @@ x
 2
 x2
 ```
-## Contribute?
+
+## Known Issues
+- When a game goes from NOT STARTED to STARTED state, the time text is not cleared properly, resulting in some overwriting of text. Fix: Restart the application.
+- Between 4 pm and 7 pm on Saturdays, the traffic at Svenskaspel is high, resulting in the requests sometimes timeouts after 8s, which is currently not handled by the application. Fix: Restart the application.
+
+# Contribute?
 
 Questions, Issues, or PRs are more than welcome! Happy Hacking.
