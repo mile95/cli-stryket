@@ -10,10 +10,6 @@ The CLI is built using the curses python library which supplies a terminal-indep
 
 ![image](https://user-images.githubusercontent.com/8545435/164912734-094959df-8ad5-4a4e-8916-c2b434e40aee.png)
 
-
-## Requirements
-- Python3
-
 ## Installation
 
 ```bash
@@ -49,9 +45,15 @@ x2
 ```
 
 ## Known Issues
+
 - When a game goes from NOT STARTED to STARTED state, the time text is not cleared properly, resulting in some overwriting of text. Fix: Restart the application.
 - Between 4 pm and 7 pm on Saturdays, the traffic at Svenskaspel is high, resulting in the requests sometimes timeouts after 8s, which is currently not handled by the application. Fix: Restart the application.
 
 # Contribute?
 
 Questions, Issues, or PRs are more than welcome! Happy Hacking.
+
+# Other
+I DO NOT OWN THE DATA DISPLAYED IN THIS APPLICATION. ALL DATA IS FETCHED FROM SVENSKASPEL AND OWNED BY SVENSKA SPEL.
+
+THE APPLICATION FETCHES THE DATA FROM: https://spela.svenskaspel.se/resultat/stryktipset
