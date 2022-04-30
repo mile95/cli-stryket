@@ -100,7 +100,7 @@ def render(stdscr: Curses._CursesWindow, args: argparse.Namespace) -> int:
             games = get_game_information()
             update(stdscr, system, games)
         except FetchException as e:
-            print(e)
+            pass
         if stdscr.getch() == ord("q"):
             return 0
         curses.napms(30 * 1000)
