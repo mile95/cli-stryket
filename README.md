@@ -25,7 +25,7 @@ pip3 install .
 ## How to run
 
 ```
-cli_stryket --input-file system.txt
+cli-stryket --input-file system.txt
 ```
 
 `system.txt` is the file containing your system. 

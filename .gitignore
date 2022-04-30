@@ -2,3 +2,5 @@
 .DS_STORE
 /venv
 *.swp
+build/
+cli_stryket.egg-info/
