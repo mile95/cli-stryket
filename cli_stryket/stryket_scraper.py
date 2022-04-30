@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from pprint import pprint
 from requests_html import HTMLSession
 from enum import Enum
+from cli_stryket.system_exception import FetchException
 
 URL = "https://spela.svenskaspel.se/resultat/stryktipset"
 GAME_DIVS_CLASS = "js-expandable-box"
@@ -137,6 +138,9 @@ def extract_game_info(soup: BeautifulSoup) -> list(dict):
         game["away_team"] = away_team
 
         games.append(game)
+    if len(games) != 13:
+        raise FetchException("Failed to fetch information for the 13 games")
+
     return games
 
 

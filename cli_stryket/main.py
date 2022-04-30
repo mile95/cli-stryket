@@ -1,6 +1,7 @@
 from __future__ import annotations
 from cli_stryket.read_input import read_input
 from cli_stryket.stryket_scraper import get_game_information, GameStatus
+from cli_stryket.stryket_scraper import FetchException
 from datetime import datetime
 
 import sys
@@ -95,11 +96,14 @@ def render(stdscr: Curses._CursesWindow, args: argparse.Namespace) -> int:
     stdscr.nodelay(True)
 
     while True:
-        games = get_game_information()
-        update(stdscr, system, games)
+        try:
+            games = get_game_information()
+            update(stdscr, system, games)
+        except FetchException as e:
+            print(e)
         if stdscr.getch() == ord("q"):
             return 0
-        curses.napms(30*1000)
+        curses.napms(30 * 1000)
 
 
 def main() -> int:
