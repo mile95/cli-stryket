@@ -28,6 +28,17 @@ def score_to_sign(score: str) -> str:
     return "x"
 
 
+def get_color(score_sign: str, system_row: str, current_sign: str) -> int:
+    if score_sign in system_row:
+        if score_sign in current_sign:
+            return 2
+        else:
+            return 3
+    elif current_sign in system_row:
+        return 3
+    return 4
+
+
 def update(stdscr: _Curses.Window, system: str, games: list(dict)):
     correct = 0
     for i, row in enumerate(system):
@@ -55,16 +66,26 @@ def update(stdscr: _Curses.Window, system: str, games: list(dict)):
             stdscr.addstr(
                 TABLE_START_ROW_INDEX + i, TIME_START_COL_INDEX, game["start_time"]
             )
-        for k, sign in enumerate(row):
-            correct += sign in score_to_sign(score)
-            stdscr.addstr(
-                TABLE_START_ROW_INDEX + i,
-                SYSTEM_START_COL_INDEX + k,
-                sign,
-                curses.color_pair(2)
-                if sign in score_to_sign(score)
-                else curses.color_pair(4),
-            )
+        correct += score_to_sign(score) in row
+        stdscr.addstr(
+            TABLE_START_ROW_INDEX + i,
+            SYSTEM_START_COL_INDEX,
+            "1",
+            curses.color_pair(get_color(score_to_sign(score), row, "1")),
+        )
+        stdscr.addstr(
+            TABLE_START_ROW_INDEX + i,
+            SYSTEM_START_COL_INDEX + 1,
+            "x",
+            curses.color_pair(get_color(score_to_sign(score), row, "x")),
+        )
+        stdscr.addstr(
+            TABLE_START_ROW_INDEX + i,
+            SYSTEM_START_COL_INDEX + 2,
+            "2",
+            curses.color_pair(get_color(score_to_sign(score), row, "2")),
+        )
+
     latest_updated_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     stdscr.addstr(TABLE_END_ROW_INDEX + 1, 0, "")
