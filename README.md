@@ -1,3 +1,8 @@
+
+This CLI is currently broken due to changed format of Stryktipset over at Svenskaspel.
+
+I will probably never fix this issue.
+
 # cli-stryket
 
 CLI for the popular Swedish betting game [Stryktipset](https://spela.svenskaspel.se/stryktipset)
